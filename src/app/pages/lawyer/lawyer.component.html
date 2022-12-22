@@ -43,7 +43,7 @@
                         <option>English</option>
                         <option>Hindi</option>
                         <option>Malayalam</option>
-                        <option>Telungu</option>
+                        <option>Telugu</option>
                         <option>Kannadam</option>
                     </select>
                 </div>
@@ -73,15 +73,15 @@
                 divorce lawyers listed on our platform and consult them for File Divorce, Appeal Divorce, Christian
                 Divorce, Muslim Divorce, Child Custody, Court Marriage, Null & Void Marriage, Family Dispute, Domestic
                 Violence, Maintenance or any other related issue</p>
-            <div class="bg lawyer-detail border">
-                <div class="row ">
+            <div class="bg lawyer-detail border mt-3"  *ngFor="let item of details">
+                <div class="row">
                     <div class="col-md-2">
                         <div class="text-center">
-                            <img src="./assets/service/avtar.png" alt="" class="img-fluid">
+                            <img src="{{item.image}}" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-6 ps-5">
-                        <h4>Aslam</h4>
+                    <div class="col-md-6 ps-5" >
+                        <h4>{{item.name}}</h4>
                         <div class="reviews">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -91,288 +91,35 @@
                         </div>
                         <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-phone text-primary"
                                 aria-hidden="true"></i><span class="text-primary">
-                                +91 88668 33313
+                                {{item.number}}
                             </span></a> <br>
 
                         <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-language text-primary"
                                 aria-hidden="true"></i><span class="text-primary">
-                                Languages: Tamil, English, Hindi.
+                                Languages: {{item.language}}
                             </span></a> <br>
 
                         <a href="#!" class=" text-decoration-none text-secondary"><i
                                 class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
                                 class="text-primary">
-                                <b>Practice Area:</b> Civil, Criminal, Family
+                                <b>Practice Area:</b> {{item.practice}}
                             </span></a>
 
                     </div>
                     <div class="col-md-4 pt-5 ps-5">
                         <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-envelope text-primary"
                                 aria-hidden="true"></i><span class="text-primary">
-                                demo1@gmail.com
+                                {{item.mail}}
                             </span></a> <br>
 
                         <a href="#!" class=" text-decoration-none text-secondary"><i
                                 class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="text-primary">
-                                Chennai, TN
+                                {{item.place}}
                             </span></a> <br>
                         <a href="#!" class=" text-decoration-none text-secondary"><i
                                 class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
                                 class="text-primary">
-                                <b>Experience:</b> 7Years
-                            </span></a>
-
-
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-light mt-3 mb-3 text-white fw-bold"
-                        style="background-color: #223a66;" routerLink="/appoinment">&nbsp; &nbsp; Get Appointment &nbsp; &nbsp;</button>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="bg lawyer-detail border mt-3">
-                <div class="row ">
-                    <div class="col-md-2">
-                        <div class="text-center">
-                            <img src="./assets/service/avtar.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6 ps-5">
-                        <h4>Bhuvanesh</h4>
-                        <div class="reviews">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-phone text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                +91 9087654321
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-language text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                Languages: Tamil, English, Hindi.
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Practice Area:</b> Civil, Criminal, Bussiness
-                            </span></a>
-
-                    </div>
-                    <div class="col-md-4 pt-5 ps-5">
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-envelope text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                demo2@gmail.com
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="text-primary">
-                                Karur, TN
-                            </span></a> <br>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Experience:</b> 4Years
-                            </span></a>
-
-
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-light mt-3 mb-3 text-white fw-bold"
-                        style="background-color: #223a66;" routerLink="/appoinment">&nbsp; &nbsp; Get Appointment &nbsp; &nbsp;</button>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="bg lawyer-detail border mt-3">
-                <div class="row ">
-                    <div class="col-md-2">
-                        <div class="text-center">
-                            <img src="./assets/service/avtar.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6 ps-5">
-                        <h4>Charles</h4>
-                        <div class="reviews">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-phone text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                +91 9867543456
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-language text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                Languages: Tamil, English, Malayalam.
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Practice Area:</b> Civil, Criminal, Corporate
-                            </span></a>
-
-                    </div>
-                    <div class="col-md-4 pt-5 ps-5">
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-envelope text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                demo3@gmail.com
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="text-primary">
-                                Kumbakonam, TN
-                            </span></a> <br>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Experience:</b> 5Years
-                            </span></a>
-
-
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-light mt-3 mb-3 text-white fw-bold"
-                        style="background-color: #223a66;" routerLink="/appoinment">&nbsp; &nbsp; Get Appointment &nbsp; &nbsp;</button>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="bg lawyer-detail border mt-3">
-                <div class="row ">
-                    <div class="col-md-2">
-                        <div class="text-center">
-                            <img src="./assets/service/avtar.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6 ps-5">
-                        <h4>Dharmadurai</h4>
-                        <div class="reviews">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-phone text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                +91 9087675645
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-language text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                Languages: Tamil, English, Kannadam.
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Practice Area:</b> Civil, Bussiness, Family
-                            </span></a>
-
-                    </div>
-                    <div class="col-md-4 pt-5 ps-5">
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-envelope text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                demo4@gmail.com
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="text-primary">
-                                Trichy, TN
-                            </span></a> <br>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Experience:</b> 9Years
-                            </span></a>
-
-
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-light mt-3 mb-3 text-white fw-bold"
-                        style="background-color: #223a66;" routerLink="/appoinment">&nbsp; &nbsp; Get Appointment &nbsp; &nbsp;</button>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="bg lawyer-detail border mt-3">
-                <div class="row ">
-                    <div class="col-md-2">
-                        <div class="text-center">
-                            <img src="./assets/service/avtar.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-md-6 ps-5">
-                        
-                        <h4>Eliyas</h4>
-                        <div class="reviews">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-phone text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                +91 8089786432
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-language text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                Languages: Tamil, English, Hindi.
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Practice Area:</b> Corporate, Criminal, Family
-                            </span></a>
-
-                    </div>
-                    <div class="col-md-4 pt-5 ps-5">
-                        <a href="#!" class=" text-decoration-none text-secondary"><i class="fa fa-envelope text-primary"
-                                aria-hidden="true"></i><span class="text-primary">
-                                demo5@gmail.com
-                            </span></a> <br>
-
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-map-marker text-primary" aria-hidden="true"></i><span class="text-primary">
-                                Pudukkottai, TN
-                            </span></a> <br>
-                        <a href="#!" class=" text-decoration-none text-secondary"><i
-                                class="fa fa-balance-scale text-primary" aria-hidden="true"></i><span
-                                class="text-primary">
-                                <b>Experience:</b> 7Years
+                                <b>Experience:</b> {{item.experience}}
                             </span></a>
 
 
