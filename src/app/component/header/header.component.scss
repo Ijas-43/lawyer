@@ -14,10 +14,13 @@ border-radius: 5px;
     background-color: none;
 }
 
-.active-link {
-    
+.active-link {  
     background-color: #ffc107;
     border-radius: 5px;
+    color: white;
+}
+
+.login-btn:hover{
     color: white;
 }
 

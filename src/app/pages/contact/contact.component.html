@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="service-bg">
     <p class="fs-5 fw-bold text-white text-center service-h1">Contact Us</p>
     <h1 class="fs-1 fw-bold text-white text-center">Get In Touch</h1>
@@ -40,7 +41,7 @@
         </div>
     </div>
 
-    <form class="row g-3">
+    <form class="row g-4">
         <div class="col-md-6">
             <input type="text" class="form-control  fw-bold bg-light text-secondary" placeholder="Your Full Name" aria-label="Last name">
           </div>
@@ -51,8 +52,14 @@
         <div class="col-md-6">
             <input type="text" class="form-control  fw-bold bg-light text-secondary" placeholder="Your Query Topic" aria-label="Last name">
           </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control  fw-bold bg-light text-secondary" placeholder="Your Phone Number" id="inputEmail4">
+          <div class="col-md-6">
+            <div class="input-group ">
+                <span class="input-group-text bg-light"><img
+                        src="./assets/icon/india (2).png" alt=""
+                        class="flag ">&nbsp;+91</span>
+                <input type="tel" class="form-control fw-bold bg-light text-secondary" id="formGroupExampleInput"
+                    placeholder="Enter Your Mobile Number" required>
+            </div>
         </div>
         <div class="col-md-12">
             <textarea class="form-control fw-bold bg-light text-secondary" id="exampleFormControlTextarea1"
@@ -75,3 +82,4 @@
         </div>
     </div>
  </div>
+ <app-footer></app-footer>

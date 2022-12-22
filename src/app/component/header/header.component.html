@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white active fw-bold" aria-current="page" href="#" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+          <a class="nav-link text-white active fw-bold" aria-current="page" href="#" routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white fw-bold" href="#" routerLink="/about" routerLinkActive="active-link">About</a>
@@ -21,11 +21,11 @@
             data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active-link">
             Find A Lawyer
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-dark">
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle " data-bs-toggle="dropdown" href="#">Family Lawyer</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" routerLink="/lawyer">File Divorce</a></li>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item " href="#" routerLink="/lawyer">File Divorce</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -74,7 +74,7 @@
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Criminal Lawyer</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#" routerLink="/lawyer">Session Court</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -120,7 +120,7 @@
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Civil Lawyer</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#" routerLink="/lawyer">Cheque Bounce</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -166,7 +166,7 @@
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Drafting</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#" routerLink="/lawyer">Notice Cheque Bounce</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -208,7 +208,7 @@
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Corporate Service</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#" routerLink="/lawyer">PAN Card Registration</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -242,7 +242,7 @@
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Others</a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="#" routerLink="/lawyer">Accident Insurance Issue</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -268,8 +268,8 @@
         <li class="nav-item">
           <a class="nav-link text-white fw-bold" routerLink="/Contact" routerLinkActive="active-link">Contact</a>
         </li>
-        <li class="nav-item nav-item-1">
-          <button class="btn btn-outline-warning fw-semibold" type="submit" routerLink="/login">Login</button>
+        <li class="nav-item">
+          <button class="btn btn-outline-warning fw-semibold login-btn" type="submit" routerLink="/login">Login</button>
         </li>
       </ul>
     </div>
