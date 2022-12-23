@@ -11,7 +11,6 @@ export class LawyerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   details=[
     {
       name : "Aslam",
