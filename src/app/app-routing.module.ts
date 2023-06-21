@@ -1,43 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppoinmentComponent } from './pages/appoinment/appoinment.component';
+import { LoginComponent } from './authenticate/login/login.component';
+import { SignupComponent } from './authenticate/signup/signup.component';
+import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LawyerComponent } from './pages/lawyer/lawyer.component';
-import { LoginComponent } from './pages/login/login.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { SignupComponent } from './pages/signup/signup.component';
+import { ServiceComponent } from './pages/service/service.component';
 
 const routes: Routes = [
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
   },
   {
-    path: "home", component: HomeComponent
+    path: 'home' ,component:HomeComponent 
   },
   {
-    path: "Contact", component: ContactComponent
+    path: 'service' ,component:ServiceComponent
   },
   {
-    path:"lawyer",component: LawyerComponent
-},
-{
-  path:"appoinment",component: AppoinmentComponent
-},
-{
-  path:"login",component: LoginComponent
-},
-{
-  path:"signup", component:SignupComponent
-},
-{
-  path:"forget-password", component:ForgetPasswordComponent
-},
-{
-  path:"service",component:ServicesComponent
-}
-
+    path: 'contact' ,component:ContactComponent
+  },
+  {
+    path:'about',component:AboutComponent
+  },
+  {
+    path: 'login',component:LoginComponent
+  },
+  {
+    path: 'signup',component:SignupComponent
+  }
 ];
 
 @NgModule({

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lawyer": {
+    "royal-enfield": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,8 +42,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 }
               ],
               "fileReplacements": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lawyer:build:production"
+              "browserTarget": "royal-enfield:build:production"
             },
             "development": {
-              "browserTarget": "lawyer:build:development"
+              "browserTarget": "royal-enfield:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lawyer:build"
+            "browserTarget": "royal-enfield:build"
           }
         },
         "test": {
@@ -105,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "2a57feab-8633-4593-8102-ad669d2bb3e9"
+    "analytics": "8460c75e-7e21-4899-8da8-7f37800ddba5"
   }
 }
